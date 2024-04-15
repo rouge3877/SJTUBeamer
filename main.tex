@@ -89,7 +89,13 @@
 \def\cmdxmp#1#2#3{\small{\texttt{\color{structure}$\backslash$#1}\{#2\}
 \hspace{1em}\\ $\Rightarrow$\hspace{1em} {#3}\par\vskip1em}}
 
-\usetheme[maxplus]{sjtubeamer}
+\usetheme[
+  maxplus,        % [maxplus|max|min] 主要主题
+  red,        % [red|blue] 主色调
+  dark,       % [dark|light] 暗色/亮色模式
+  topright,   % [topright|bottomright] 徽标位置
+  smoothtree, % [miniframes|infolines|sidebar|default|smoothbars|split|shadow|tree|smoothtree] 外样式
+]{sjtubeamer}
 % 使用 maxplus/max/min 切换标题页样式
 % 使用 red/blue 切换主色调
 % 使用 light/dark 切换亮/暗色模式
@@ -117,16 +123,16 @@
   breaklines,%
 }
 
-\author{Alexara Wu}
-\institute[SJTUG]{上海交通大学 Linux 用户组}
+\author{Yuxuan Li}
+\institute[XJTU]{Yuxuan Li AND his Team}
 \date{\the\year 年 \the\month 月}
-\subject{上海交通大学图书馆专题培训讲座}
-\keywords{LaTeX, 论文排版, SJTUThesis}
+\subject{Marx课程汇报}
+\keywords{习近平思想文化, 思政课程, Rouge}
 
-\title[\SJTUBeamer 示例文档] % 页脚显示标题
-{\textbf{如何使用 \LaTeX{} 排版论文}} % 首页标题
+\title[习近平思想文化我来讲] % 页脚显示标题
+{\textbf{为实现中国梦，弘扬中华文化贡献力量}} % 首页标题
 
-\subtitle{\SJTUBeamer 示例文档}
+\subtitle{思政课程汇报}
 
 \begin{document}
 
@@ -152,43 +158,95 @@
 
 \maketitle
 
-\begin{frame}
-  \frametitle{来源}
-  \begin{thebibliography}{00}
-    \setbeamertemplate{bibliography item}[online]
-    \bibitem{} Alexara Wu.
-    \newblock 如何使用 \LaTeX{} 排版论文[EB/OL].
-    \newblock 2021.
-    \url{https://github.com/sjtug/sjtulib-latex-talk/tree/alexara-2021}
-  \end{thebibliography}
+% \begin{frame}
+%   \frametitle{来源}
+%   \begin{thebibliography}{00}
+%     \setbeamertemplate{bibliography item}[online]
+%     \bibitem{} Alexara Wu.
+%     \newblock 如何使用 \LaTeX{} 排版论文[EB/OL].
+%     \newblock 2021.
+%     \url{https://github.com/sjtug/sjtulib-latex-talk/tree/alexara-2021}
+%   \end{thebibliography}
 
-  \vspace*{2ex}
+%   \vspace*{2ex}
 
-  \begin{itemize}
-    \item 本示例文档的源码结构适用于简短的单次报告，仅展示 \beamer{} 文档类的通
-          用功能，更多地在使用 \SJTUBeamer{} 的样式信息。
-    \item 为发挥 \SJTUBeamer{} 的全部功能，参见发布区
-          \link{https://github.com/sjtug/SJTUBeamer/releases} 的快速入门、用户手
-          册与开发文档。
-    \item 就制作一组讲座而言，相关源码结构可以参考新讲座
-          \link{https://github.com/sjtug/sjtulib-latex-talk/tree/logcreative-2022}。
-          新讲座使用了社区版主题的同时也展示了 \SJTUBeamer{} 的特殊用法。
-  \end{itemize}
+%   \begin{itemize}
+%     \item 本示例文档的源码结构适用于简短的单次报告，仅展示 \beamer{} 文档类的通
+%           用功能，更多地在使用 \SJTUBeamer{} 的样式信息。
+%     \item 为发挥 \SJTUBeamer{} 的全部功能，参见发布区
+%           \link{https://github.com/sjtug/SJTUBeamer/releases} 的快速入门、用户手
+%           册与开发文档。
+%     \item 就制作一组讲座而言，相关源码结构可以参考新讲座
+%           \link{https://github.com/sjtug/sjtulib-latex-talk/tree/logcreative-2022}。
+%           新讲座使用了社区版主题的同时也展示了 \SJTUBeamer{} 的特殊用法。
+%   \end{itemize}
 
-\end{frame}
+% \end{frame}
 
 \begin{frame}{目录}
   \tableofcontents[hideallsubsections]	% 隐藏所有小节信息
 \end{frame}
 
-\include{contents/introduction}
-\include{contents/basis}
-\include{contents/thesis}
-\include{contents/summary}
+% \include{contents/introduction}
+% \include{contents/basis}
+% \include{contents/thesis}
+% \include{contents/summary}
 
-\begin{frame}
-  \frametitle{参考文献}
-  \printbibliography[heading=none]
+\part{引入, 介绍}
+\section{引入}
+\subsection{时政切入}
+\begin{frame}{时政切入}
+  当前，我们正处在一个国家发展和社会变革的关键时期，最近的 [请插入当前具体的时政事件] 为我们提供了一个观察和学习习近平思想文化的实际窗口。习近平主席的系列讲话和指导思想对我们如何理解当下的政治、经济和文化现象提供了深刻的见解。
+\end{frame}
+
+\subsection{带出主题}
+\begin{frame}{带出主题}
+  在全球化的大背景下，坚持和发展中国特色社会主义文化，对于推进国家治理体系和治理能力现代化，实现中华民族伟大复兴具有不可替代的作用。习近平思想文化不仅是理论上的高度概括，更是实践中的具体指导，它强调坚持以人民为中心的发展思想，促进社会主义文化繁荣兴盛，为我们勾画了实现中华民族伟大复兴的文化蓝图。
+\end{frame}
+
+\section{介绍}
+\subsection{理论内涵}
+\begin{frame}{理论内涵}
+  习近平思想文化的理论内涵主要包括：坚持马克思主义基本理论、坚持社会主义先进文化前进方向、坚持中华文化立国根本、坚持以人民为中心的创作导向、坚持文化自信的道路自信、理论自信、制度自信。
+\end{frame}
+
+\subsection{重要意义}
+\begin{frame}{重要意义}
+  习近平思想文化的重要意义体现在：
+  \begin{itemize}
+    \item 确立文化自信的根本地位，促进民族精神和时代精神的深度融合。
+    \item 通过文化创新推动文化产业发展，增强国家文化软实力。
+    \item 弘扬社会主义核心价值观，形成全民族的精神纽带。
+    \item 指导文化交流互鉴，推动构建人类命运共同体。
+  \end{itemize}
+\end{frame}
+
+\subsection{马克思主义创新性发展}
+\begin{frame}{马克思主义创新性发展}
+  习近平思想文化在马克思主义中国化的进程中不断创新发展，将马克思主义基本原理与中国具体实际相结合，提出了一系列新的理论观点、战略思想和治国理政新理念，为新时代中国特色社会主义文化建设提供了科学指导。
+\end{frame}
+
+
+\part{践行, 总结}
+\section{践行}
+\subsection{时政分析}
+\begin{frame}{时政分析}
+  [此处应插入一个具体的时政案例分析]，例如如何通过习近平文化思想指导我们正确理解和处理中美贸易摩擦、环境保护、脱贫攻坚等重大问题。
+\end{frame}
+
+\subsection{个人实践}
+\begin{frame}{个人实践}
+  在日常生活中践行习近平思想文化，可以体现在积极学习国家文化、参与志愿服务、保护环境、推广国学经典、展示中华艺术等方面。每个人的这些小小实践，汇聚成推动社会文化进步的强大力量。
+\end{frame}
+
+
+\section{总结}
+\begin{frame}{鼓励学生积极参与}
+  作为思想政治教育的老师，我鼓励大家积极参与到习近平思想文化的学习和践行中来，将这些理论知识转化为解决实际问题的能力，为实现个人的全面发展和国家的文化繁荣作出贡献。
+\end{frame}
+
+\begin{frame}{为实现中国梦，弘扬中华文化贡献力量}
+  我们每个人都是中华文化的传承者和创新者，让我们携手共同为实现中国梦、弘扬中华文化而努力。通过我们的不懈努力，将习近平思想文化的精髓传播至每一个角落，为构建社会主义文化强国贡献自己的力量。
 \end{frame}
 
 \makebottom
